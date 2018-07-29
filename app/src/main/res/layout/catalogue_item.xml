@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/catalogue_iv_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/catalogue_tv_subhead"
+        android:text="这是标题"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/catalogue_iv_image"
+        android:layout_alignTop="@id/catalogue_iv_image"
+        />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/catalogue_tv_price"
+        android:text="9999"
+        android:layout_toRightOf="@id/catalogue_iv_image"
+        android:layout_below="@id/catalogue_tv_subhead"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        />
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/catalogue_tv_salenum"
+        android:text="9999"
+        android:layout_toRightOf="@id/catalogue_iv_image"
+        android:layout_below="@id/catalogue_tv_price"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorGray"
+        />
+
+
+</RelativeLayout>

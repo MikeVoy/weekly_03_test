@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <RelativeLayout
+          android:id="@+id/rl_searchlayout"
+          android:layout_margin="8dp"
+          android:background="@drawable/circular_layout"
+          android:layout_width="340dp"
+          android:layout_height="42dp">
+      <ImageView
+          android:id="@+id/iv_search"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_centerVertical="true"
+          android:background="@mipmap/search_icon2"
+          />
+      <EditText
+          android:id="@+id/et_search_content"
+          android:layout_marginLeft="8dp"
+          android:layout_toRightOf="@id/iv_search"
+          android:layout_width="280dp"
+          android:layout_height="match_parent"
+          android:background="@null"
+          android:hint="在千万商品中搜索"
+          />
+  </RelativeLayout>
+ <TextView
+     android:id="@+id/tv_cacel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="取消"
+     android:textSize="22sp"
+     android:textStyle="bold"
+     android:layout_alignTop="@id/rl_searchlayout"
+     android:layout_toRightOf="@id/rl_searchlayout"
+     android:layout_marginTop="8dp"
+     />
+
+</RelativeLayout>

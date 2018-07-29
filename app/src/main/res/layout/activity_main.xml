@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/search_header01"/>
+    <include layout="@layout/recent_search"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="105dp"
+    >
+    <com.example.library.AutoFlowLayout
+        android:id="@+id/afl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_below="@id/afl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索发现"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="75dp"
+            android:paddingTop="4dp"
+            android:background="@drawable/circular_textview"
+            android:gravity="center_horizontal"
+            android:layout_height="35dp"
+            android:textSize="17dp"
+            android:text="鸡蛋"
+            />
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="75dp"
+            android:paddingTop="4dp"
+            android:background="@drawable/circular_textview"
+            android:gravity="center_horizontal"
+            android:layout_height="35dp"
+            android:textSize="17dp"
+            android:text="芒果"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="常用分类"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="55dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/circle"
+            android:gravity="center_horizontal"
+            android:layout_height="55dp"
+            android:textSize="17dp"
+            android:text="苹果"
+            />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="55dp"
+            android:paddingTop="15dp"
+            android:gravity="center_horizontal"
+            android:layout_height="55dp"
+            android:textSize="17dp"
+            android:background="@drawable/circle"
+            android:text="榴莲"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

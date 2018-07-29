@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <include layout="@layout/cart_header"/>
+
+    <ExpandableListView
+        android:id="@+id/cart_elv"
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+    </ExpandableListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/cart_tv_checkout"
+            android:layout_width="81dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_alignBottom="@+id/cart_rb_checkall"
+            android:layout_marginBottom="2dp"
+            android:text="小计：000" />
+
+        <CheckBox
+            android:gravity="center"
+            android:id="@+id/cart_rb_checkall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="已选()" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
